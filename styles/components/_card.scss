@@ -1,0 +1,46 @@
+@use '../mixins/responsive' as *;
+
+.accordion{
+    width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+    margin: auto;
+
+    @include breakpoint-down(small){
+        border-radius: 8px;
+        padding: 24px;
+        margin: 50px auto;
+    }
+    .accordion-item{
+        .accordion-header{
+            .accordion-button{
+                font-size: 18px;
+                font-weight: 600;
+                color: $accordion-color;
+                @include breakpoint-down(small){
+                    font-size: 16px;
+                }
+                &:hover{
+                    color: $pink;
+                }
+            }
+        }
+        .accordion-body{
+            color: $pale-purple;
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+
+            @include breakpoint-down(small){
+                font-size: 14px;
+            }
+        h1{
+            @include breakpoint-down(small){
+                font-size: 32px;
+            }
+        }    
+        }
+    }   
+}

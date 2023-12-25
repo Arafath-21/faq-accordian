@@ -1,0 +1,21 @@
+p{
+    font-size: var(--font-size);
+}
+
+h1{
+    color: $dark-purple;
+    font-family: var(--font-family);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: var(--bold);
+    line-height: normal;    
+}
+
+h2{
+    color: $dark-purple;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: var(--semi-bold);
+    line-height: normal;    
+}
